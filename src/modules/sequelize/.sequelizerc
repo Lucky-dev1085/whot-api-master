@@ -1,0 +1,12 @@
+'use strict';
+
+require(require('app-root-path') + '/bootstrap');
+
+module.exports = {
+  'migrations-path': config.get('paths.rootdir') + '/db/sequelize/migrations',
+  'seeders-path': config.get('paths.rootdir') + '/db/sequelize/seeders/init',
+  'config': __dirname + '/config/sequelize.js'
+  //'url': config.get('modules.sequelize.url')
+};
+
+// vim: set ft=javascript:

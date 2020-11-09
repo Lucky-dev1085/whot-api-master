@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:cciocov/grunt-email-workflow.git
+	branch = master
+	commit = 396ecf1290834d6f0dfa3d916215ba8ba8ba2ebb
+	parent = 72c4cc2f6de4644f60e1193de09799b4d18aaffe
+	method = merge
+	cmdver = 0.4.0

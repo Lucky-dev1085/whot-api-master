@@ -1,0 +1,6 @@
+{
+    "sender": "BULKSMSNG_SENDER",
+    "accessKey": "BULKSMSNG_ACCESS_KEY",
+    "simulate": "BULKSMSNG_SIMULATE",
+    "dndOption": "BULKSMSNG_DND_OPTION"
+}

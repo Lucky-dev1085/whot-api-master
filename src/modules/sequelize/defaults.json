@@ -1,0 +1,5 @@
+{
+  "url": "DATABASE_URL",
+  "logging": true,
+  "charset": "utf8mb4"
+}

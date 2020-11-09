@@ -1,0 +1,12 @@
+{
+  "name": "node-module-feathers-socketio-chat",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "license": "LicenseRef-LICENSE",
+  "repository": {
+    "url": "git@bitbucket.org:onsysol/node-module-feathers-socketio-chat",
+    "type": "git"
+  }
+}

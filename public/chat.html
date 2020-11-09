@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Whot! Game Lobby Chat</title>
+    <style>
+     * { margin: 0; padding: 0; box-sizing: border-box; }
+     body { font: 13px Helvetica, Arial; }
+     form { background: #000; padding: 3px; width: 100%; }
+     form input { border: 0; padding: 10px; width: 80%; margin-right: .5%; }
+     form button { width: 19%; background: rgb(160, 224, 128); border: none; padding: 10px; }
+     #messages { list-style-type: none; margin: 0; padding: 0; height: 500px; }
+     #messages li { padding: 5px 10px; }
+     #messages li:nth-child(odd) { background: #eee; }
+     .not-authenticated {
+       color: #B00;
+     }
+     #view {
+       margin: 10px auto 0 auto;
+       display: block;
+       width: 400px;
+     }
+     h2 {
+       text-align: center;
+     }
+    </style>
+
+  </head>
+  <body>
+    <h2>Welcome to Whot! chat</h2>
+
+    <div id="view">
+      <ul id="messages">
+        <li>No new messages</li>
+      </ul>
+      <form action="">
+        <input id="m" autocomplete="off" placeholder="Say hi!" /><button>Send</button>
+      </form>
+    </div>
+    <script src="feathers.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+
+     // Set up Feathers client side with socket.io
+     const app = feathers();
+     const socket = io('//' + window.location.host, {
+       transports: ['websocket', 'polling'],
+     });
+     app.configure(feathers.socketio(socket));
+     const wsAuth = app.service('ws-auth');
+
+     socket.on('connect', () => {
+       console.log('Got connect event');
+       const jwt = window.localStorage.getItem('swagger-jwt-whot-api');
+       wsAuth
+         .create({ jwt })
+         .then(function() {
+           $('#messages').append($('<li>').text(`Authenticated with ws-auth`));
+         })
+         .catch(function(e) {
+           $('#messages').append($('<li>').addClass(e.className).text(`${e.code || ''} ${e.name}`));
+         });
+     });
+
+     // Get the messages service that talks to the server
+     const messages = app.service('chat-messages');
+
+     // Log newly created messages
+     messages.on('created', message => {
+       $('#messages').append($('<li>').text(message.text));
+     });
+
+     const jwt = window.localStorage.getItem('swagger-jwt-whot-api');
+
+     $('form').submit(function(e) {
+       e.preventDefault(); // prevents page reloads
+
+       const message = {
+         text: $('#m').val(),
+         type: 'room-messages',
+         senderName: '',
+         contentUrl: '',
+         contentType: '',
+       };
+       $('#m').val('');
+
+       if (message.text) {
+         messages
+           .create(message)
+           .then(() => messages.find())
+           .then(page => console.log('Messages', page))
+           .catch((e) => {
+             $('#messages').append($('<li>').addClass(e.className).text(`${e.code} ${e.name}`));
+           });
+       }
+       return false;
+     });
+    </script>
+  </body>
+</html>

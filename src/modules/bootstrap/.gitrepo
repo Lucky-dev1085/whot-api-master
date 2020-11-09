@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@bitbucket.org:onsysol/node-module-bootstrap
+	branch = v1
+	commit = 3f01009efa48fbb8015ec32f347522a434f2d436
+	method = merge
+	cmdver = 0.4.0
+	parent = fc27395e0f53c4e9339b2f4573145a9a1d5d9b6f

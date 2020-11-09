@@ -1,0 +1,24 @@
+---
+layout: default.hbs
+subject: Welcome
+---
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+            <p>Hello,</p>
+            <p>An admin account has been created for you on the Whot Card Game platform.</p>
+
+            <p>To access it, click the button below. You will be required to set a secure password.</p>
+
+            {{> button type='primary' align='left' url='{{link}}' title='Set Password' }}
+
+            <p>If you have questions or concerns, please email \{{supportEmail}}!</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

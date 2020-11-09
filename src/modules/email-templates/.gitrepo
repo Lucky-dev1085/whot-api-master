@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@bitbucket.org:onsysol/node-module-email-templates
+	branch = v1
+	commit = faf3d8c563bd217d73d789151bea213010ff3e5c
+	parent = fc27395e0f53c4e9339b2f4573145a9a1d5d9b6f
+	method = merge
+	cmdver = 0.4.0

@@ -1,0 +1,21 @@
+---
+layout: default.hbs
+subject: Welcome
+---
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+          <p>Hello,</p>
+
+          <p>\{{firstName}} has declined your invitation to play Whot NG!</p>
+
+          {{> button type='primary' align='left' url='{{link}}' title='Invite Others!' }}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

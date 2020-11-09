@@ -1,0 +1,16 @@
+{
+  "name": "node-module-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "license": "LicenseRef-LICENSE",
+  "repository": {
+    "url": "git@bitbucket.org:onsysol/node-module-bootstrap",
+    "type": "git"
+  },
+  "dependencies": {
+    "config": "3.1.0",
+    "dotenv": "7.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@bitbucket.org:onsysol/node-module-feathers-utils
+	branch = v1
+	commit = eb1b87147717ef395b4f621474ce45a5eed7695e
+	parent = fc27395e0f53c4e9339b2f4573145a9a1d5d9b6f
+	method = merge
+	cmdver = 0.4.0

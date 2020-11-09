@@ -1,0 +1,9 @@
+{
+  "simulate": false,
+  "from": {
+    "addr": "sender@example.com",
+    "name": "Sender Name"
+  },
+  "providers": [],
+  "defaultProvider": ""
+}

@@ -1,0 +1,53 @@
+{
+  "path": "/auth",
+  "successRedirectUrl": "${FE_URL_BASE}${FE_PATH_AUTH_SUCCESS}",
+  "failureRedirectUrl": "${FE_URL_BASE}${FE_PATH_AUTH_FAILURE}",
+  "passwordResetUrl": "${FE_URL_BASE}${FE_PATH_PASSWORD_RESET}",
+  "passwordResetUrlAdmin": "${ADMFE_URL_BASE}${FE_PATH_PASSWORD_RESET}",
+  "passportModel": "passport",
+  "tokenModel": "token",
+  "userModel": "user",
+  "passwordResetExpiresIn": 21600,
+  "jwt": {
+    "expiresIn": "4h",
+    "refreshTokenExpiresIn": "1y"
+  },
+  "cookie": false,
+  "providers": {
+    "local": {}
+  },
+  "features": {
+    "accounts": {
+      "enabled": false
+    },
+    "rolesAndPermissions": {
+      "enabled": true
+    },
+    "welcomeEmail": {
+      "enabled": true,
+      "token": "password-reset",
+      "link": "${FE_URL_BASE}${FE_PATH_CONFIRM_EMAIL}",
+      "headerImageUrl": "${HEADER_IMAGE_URL}",
+      "clientLink": "${FE_URL_BASE}",
+      "clientPrivacyLink": "${FE_URL_BASE}/legal/privacy-policy",
+      "clientTermsLink": "${FE_URL_BASE}/legal/terms",
+      "faqLink": "${FE_URL_BASE}/faqs",
+      "supportEmail": "${SUPPORT_EMAIL}",
+      "subject": "Welcome!",
+      "htmlTemplate": "welcome"
+    },
+    "welcomeEmailAdmin": {
+      "enabled": true,
+      "token": "password-reset",
+      "link": "${ADMFE_URL_BASE}${FE_PATH_CONFIRM_EMAIL}",
+      "headerImageUrl": "${HEADER_IMAGE_URL}",
+      "clientLink": "${FE_URL_BASE}",
+      "clientPrivacyLink": "${FE_URL_BASE}/legal/privacy-policy",
+      "clientTermsLink": "${FE_URL_BASE}/legal/terms",
+      "supportEmail": "${SUPPORT_EMAIL}",
+      "faqLink": "${FE_URL_BASE}/faqs",
+      "subject": "Welcome!",
+      "htmlTemplate": "welcome-admin"
+    }
+  }
+}

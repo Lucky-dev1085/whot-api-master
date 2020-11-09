@@ -1,0 +1,8 @@
+{
+  "name": "node-module-feathers-sequelize",
+  "version": "1.0.2",
+  "description": "Mount a CRUD service for each defined model.",
+  "private": true,
+  "main": "index.js",
+  "license": "LicenseRef-LICENSE"
+}

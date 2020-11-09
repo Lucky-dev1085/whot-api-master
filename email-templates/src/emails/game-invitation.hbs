@@ -1,0 +1,29 @@
+---
+layout: default.hbs
+subject: Welcome
+---
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+          <p>Hello,</p>
+
+          <p>\{{firstName}} has invited you to play Whot NG!</p>
+
+          <p>Minimum stake: &#x20a6; \{{minStakeAmount}}</p>
+
+          <p>Number of players: \{{maxPlayerCount}}</p>
+
+          <p>Start time: \{{startTime}}</p>
+
+          {{> button type='primary' align='left' url='{{joinLink}}' title='Join Whot!' }}
+
+          {{> button type='primary' align='left' url='{{declineLink}}' title='Decline' }}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

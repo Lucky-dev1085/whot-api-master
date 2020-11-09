@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@bitbucket.org:onsysol/node-module-feathers-sequelize
+	branch = v1
+	commit = 654e50a421f0fdba0d51f1b7b2b25a065ac2478c
+	parent = 6c2007f1d5981cd938684703b2147c6c3e2b55a6
+	method = merge
+	cmdver = 0.4.0

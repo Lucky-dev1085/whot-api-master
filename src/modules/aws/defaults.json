@@ -1,0 +1,15 @@
+{
+  "accessKeyId": "AWS_ACCESS_KEY_ID",
+  "secretAccessKey": "AWS_SECRET_ACCESS_KEY",
+  "services": {
+    "ses": {
+      "simulate": "EMAIL_SIMULATE",
+      "from": {
+        "addr": "EMAIL_FROM_ADDR",
+        "name": "EMAIL_FROM_NAME"
+      }
+    },
+    "s3": {
+    }
+  }
+}

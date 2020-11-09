@@ -1,0 +1,8 @@
+{
+  "name": "node-module-feathers-utils",
+  "version": "1.0.0",
+  "description": "Utils for node-seed-feathers apps.",
+  "private": true,
+  "main": "index.js",
+  "license": "LicenseRef-LICENSE"
+}

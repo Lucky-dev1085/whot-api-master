@@ -1,0 +1,68 @@
+{
+  "publicUrl": "${PUBLIC_URL}",
+  "host": "${HOST}",
+  "port": "${PORT}",
+  "secret": "${SECRET}",
+  "nodeEnv": "${NODE_ENV}",
+  "redisServerUrl": "${REDIS_SERVER_URL}",
+  "gameStartTimeout": "${GAME_START_TIMEOUT}",
+  "defaultGameStartMinutes": "${DEFAULT_GAME_START_MINUTES}",
+  "gameInvitePlayersUrl": "${FE_URL_BASE}${FE_PATH_INVITE_PLAYERS}",
+  "gameConfirmInvitationUrl": "${FE_URL_BASE}${FE_PATH_JOIN_GAME}",
+  "gameDeclineInvitationUrl": "${PUBLIC_URL}${BE_PATH_DECLINE_GAME}",
+  "gameInviteDeclinedUrl": "${FE_URL_BASE}${FE_PATH_DECLINED_GAME}",
+  "playerTimeout": "${GAME_PLAY_TIMEOUT}",
+  "playerConnectionTimeout": "${GAME_CONNECTION_TIMEOUT}",
+  "robotPlaysPickTwo": "${ROBOT_PLAYS_PICK_TWO}",
+  "gameDispatcherFrequency": "${GAME_DISPATCHER_FREQUENCY}",
+  "gameDispatcherCountdown": "${GAME_DISPATCHER_COUNTDOWN}",
+  "gameAISleep": "${GAME_AI_SLEEP}",
+  "public": {
+    "root": "../public"
+  },
+  "paths": {
+    "rootdir": "../",
+    "basedir": "../src"
+  },
+  "paystack": {
+    "domain": "PAYSTACK_ENV",
+    "publicKey": "PAYSTACK_KEY",
+    "secretKey": "PAYSTACK_SECRET"
+  },
+  "modules": {
+    "feathers-auth": {},
+    "apidocs": {},
+    "feathers-apidocs": {},
+    "sequelize": {
+      "url": "${DATABASE_URL}"
+    },
+    "feathers-sequelize": {},
+    "email": {
+      "simulate": "${EMAIL_SIMULATE}",
+      "from": {
+        "addr": "${EMAIL_FROM_ADDR}",
+        "name": "${EMAIL_FROM_NAME}"
+      },
+      "providers": ["aws/ses"],
+      "defaultProvider": "aws/ses"
+    },
+    "feathers-socketio-chat": {},
+    "infobip": {},
+    "aws": {
+      "accessKeyId": "AWS_ACCESS_KEY_ID",
+      "secretAccessKey": "AWS_SECRET_ACCESS_KEY",
+      "region": "AWS_REGION",
+      "services": {
+        "ses": {
+          "simulate": "EMAIL_SIMULATE",
+          "region": "AWS_SES_REGION",
+          "from": {
+            "addr": "EMAIL_FROM_ADDR",
+            "name": "EMAIL_FROM_NAME"
+          }
+        },
+        "s3": {}
+      }
+    }
+  }
+}

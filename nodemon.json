@@ -1,0 +1,10 @@
+{
+  "watch": [
+    "config/",
+    "src/",
+    ".env",
+    "bootstrap.js",
+    "package.json"
+  ],
+  "ext": "js json yaml"
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{{ subject }}</title>
+<link href="../src/css/main.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<table class="body">
+  <tr>
+    <td></td>
+    <td class="container">
+      <div class="content">
+
+        <span class="preheader">Welcome to WHOT.ng</span>
+        <div class="header">
+          <table>
+            <tr>
+              <td class="align-center">
+                <a href="\{{clientLink}}"><img src="\{{headerImageUrl}}" width="100%" alt="Whot.ng"></a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+        {{ body }}
+
+        <div class="footer">
+          <table>
+            <tr>
+              <td class="up">
+                <span class="brand-type1">Whot</span><span class="brand-type2">.ng</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="left">
+                <a href="\{{clientPrivacyLink}}">Privacy Policy</a>
+              </td>
+              <td class="right">
+                <a href="\{{clientTermsLink}}">Terms And Conditions</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+      </div>
+    </td>
+    <td></td>
+  </tr>
+</table>
+
+</body>
+</html>

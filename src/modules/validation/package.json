@@ -1,0 +1,11 @@
+{
+  "name": "node-module-validation",
+  "version": "1.0.0",
+  "description": "Data validation using Ajv.",
+  "private": true,
+  "main": "index.js",
+  "license": "LicenseRef-LICENSE",
+  "dependencies": {
+    "ajv": "6.5.4"
+  }
+}

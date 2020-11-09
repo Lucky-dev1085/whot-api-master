@@ -1,0 +1,13 @@
+{
+  "name": "node-module-feathers-auth",
+  "version": "2.0.0",
+  "description": "Authentication (based on Passport) and authorisation.",
+  "private": true,
+  "main": "index.js",
+  "license": "LicenseRef-LICENSE",
+  "dependencies": {
+    "bcrypt": "3.0.6",
+    "jsonwebtoken": "8.3.0",
+    "passport": "0.4.0"
+  }
+}

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@bitbucket.org:onsysol/node-module-numverify
+	branch = v1
+	commit = c8875f70d0061712a40086f620adcca59c681ead
+	method = merge
+	cmdver = 0.4.0
+	parent = 699ab50e8d86ab5ab41815f5cbbf949643d79f61

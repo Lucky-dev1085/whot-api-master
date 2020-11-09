@@ -1,0 +1,12 @@
+{
+  "name": "node-module-utils",
+  "version": "1.0.0",
+  "description": "Utils for Node apps.",
+  "private": true,
+  "main": "index.js",
+  "license": "LicenseRef-LICENSE",
+  "dependencies": {
+    "randomstring": "1.1.5",
+    "uuid": "3.3.2"
+  }
+}

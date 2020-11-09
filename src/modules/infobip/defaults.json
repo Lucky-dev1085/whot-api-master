@@ -1,0 +1,6 @@
+{
+  "sender": "INFOBIP_SENDER",
+  "appKey": "INFOBIP_APP_KEY",
+  "basicKey": "INFOBIP_BASIC_KEY",
+  "simulate": "INFOBIP_SIMULATE"
+}

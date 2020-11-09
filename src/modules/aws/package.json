@@ -1,0 +1,11 @@
+{
+  "name": "node-module-aws",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "license": "LicenseRef-LICENSE",
+  "dependencies": {
+    "aws-sdk": "2.392.0"
+  }
+}

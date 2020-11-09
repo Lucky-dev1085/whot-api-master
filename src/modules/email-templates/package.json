@@ -1,0 +1,13 @@
+{
+  "name": "node-module-email-templates",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "license": "LicenseRef-LICENSE",
+  "dependencies": {
+    "consolidate": "0.15.1",
+    "grunt-cli": "1.2.0",
+    "handlebars": "4.0.11"
+  }
+}

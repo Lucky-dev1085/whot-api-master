@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@bitbucket.org:onsysol/node-module-bulksms
+	branch = v1
+	commit = 7485b6ac79166172bd3b810acfc158db6af945c3
+	method = merge
+	cmdver = 0.4.0
+	parent = 38bcd707fa3c1840537223f7cd0fa7a7cbd33eb3

@@ -1,0 +1,8 @@
+{
+  "name": "node-module-feathers-validation",
+  "version": "1.0.0",
+  "description": "Provide a data validation hook for Feathers services.",
+  "private": true,
+  "main": "index.js",
+  "license": "LicenseRef-LICENSE"
+}

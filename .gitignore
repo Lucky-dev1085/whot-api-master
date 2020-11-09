@@ -1,0 +1,8 @@
+node_modules
+/dist
+.env*
+
+# temporary or otherwise not needed files:
+.DS_Store
+.*.swp
+npm-debug.log

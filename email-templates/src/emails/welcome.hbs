@@ -1,0 +1,29 @@
+---
+layout: default.hbs
+subject: Welcome
+---
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+          <p>Hello,</p>
+
+          <p>Welcome to Whot NG, please find your details below:</p>
+
+          <p>Username: \{{firstName}}</p>
+
+          <p>Deposit balance: \{{depositAmount}}</p>
+
+          <p>Withdrawal balance: \{{withdrawalAmount}}</p>
+
+          <p>If you require support, please visit \{{faqLink}} or email \{{supportEmail}}</p>
+
+          {{> button type='primary' align='left' url='{{link}}' title='Play Whot!' }}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

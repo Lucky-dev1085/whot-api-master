@@ -1,0 +1,16 @@
+{
+  "name": "node-module-bulksms",
+  "version": "1.0.1",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "license": "LicenseRef-LICENSE",
+  "repository": {
+    "url": "git@bitbucket.org:onsysol/node-module-bulksms",
+    "type": "git"
+  },
+  "dependencies": {
+    "request": "2.88.0",
+    "request-promise-native": "1.0.7"
+  }
+}

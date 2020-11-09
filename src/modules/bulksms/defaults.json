@@ -1,0 +1,7 @@
+{
+  "sender": "BULKSMS_SENDER",
+  "tokenId": "BULKSMS_TOKEN_ID",
+  "tokenSecret": "BULKSMS_TOKEN_SECRET",
+  "authBasic": "BULKSMS_AUTH_BASIC",
+  "simulate": "BULKSMS_SIMULATE"
+}

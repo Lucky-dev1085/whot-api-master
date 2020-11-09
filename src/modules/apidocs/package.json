@@ -1,0 +1,12 @@
+{
+  "name": "node-module-apidocs",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "license": "LicenseRef-LICENSE",
+  "dependencies": {
+    "js-yaml": "3.13.1",
+    "swagger-ui-dist": "3.22.1"
+  }
+}

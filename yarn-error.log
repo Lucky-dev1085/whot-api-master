@@ -1,0 +1,100 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Yarn\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\xampp\php;C:\composer;C:\Users\admin\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Bandizip\;C:\Users\admin\.dotnet\tools;C:\Users\admin\AppData\Roaming\npm;C:\Users\admin\AppData\Local\Yarn\bin;C:\Users\admin\AppData\Local\Android\Sdk\emulator;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\ArangoDB3 3.7.3\usr\bin;C:\Users\admin\AppData\Roaming\Composer\vendor\bin;C:\Users\admin\AppData\Roaming\nvm;C:\Program Files\nodejs
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.19.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\admin\AppData\Local\Yarn\Cache\v6\npm-eslint-5.16.0-a1e3ac1aae4a3fbd8296fcf8f7ab7314cbb6abea-integrity\node_modules\eslint\.yarn-tarball.tgz'
+
+npm manifest: 
+  {
+    "name": "whot-api",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "settings": {
+      "modules": {
+        "git": "git@bitbucket.org:onsysol",
+        "dir": "src/modules",
+        "tpl": "node-skel-module-feathers"
+      },
+      "reqlib": {
+        "paths": {
+          "_/hooks": "hooks",
+          "_/models": "models",
+          "_/modules": "modules"
+        }
+      }
+    },
+    "scripts": {
+      "start": "run-s app-prod-start",
+      "stop": "run-s app-prod-stop",
+      "prod": "run-p app-prod",
+      "dev": "run-p app-dev",
+      "app-prod-start": "NODE_ENV=production forever start dist/index.js",
+      "app-prod-stop": "forever stop dist/index.js",
+      "app-prod": "NODE_ENV=production node dist/index.js",
+      "app-dev": "NODE_ENV=development DEBUG=app:* nodemon src/index.js",
+      "build": "npm run compile && npm run copydotfiles && npm run pi",
+      "compile": "babel src -d dist --copy-files --ignore node_modules",
+      "copydotfiles": "copyfiles -u 1 src/modules/*/.* dist",
+      "lint": "eslint ./src",
+      "pi": "NODE_ENV=production npm i --unsafe-perm",
+      "?test": "Run all tests (using mocha)",
+      "test": "mocha ./tests/*.js",
+      "postinstall": "cd src/modules/bootstrap && npm i && node scripts/postinstall.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:intelia/whot-api.git"
+    },
+    "license": "LicenseRef-LICENSE",
+    "engines": {
+      "node": ">= 8.9.4"
+    },
+    "devDependencies": {
+      "axios": "0.19.0",
+      "babel-cli": "6.26.0",
+      "babel-eslint": "10.0.1",
+      "babel-plugin-transform-class-properties": "6.24.1",
+      "babel-plugin-transform-decorators-legacy": "1.3.5",
+      "babel-plugin-transform-object-rest-spread": "6.26.0",
+      "babel-preset-env": "1.7.0",
+      "babel-register": "6.26.0",
+      "chai": "4.2.0",
+      "copyfiles": "2.1.0",
+      "crest-js": "1.1.0",
+      "eslint": "5.16.0",
+      "mocha": "6.1.4",
+      "nodemon": "1.19.0"
+    },
+    "dependencies": {
+      "@feathersjs/errors": "3.3.6",
+      "app-root-path": "2.2.1",
+      "async-redis": "1.1.7",
+      "bcrypt": "3.0.6",
+      "debug": "4.1.1",
+      "forever": "1.0.0",
+      "lodash": "4.17.11",
+      "moment": "2.24.0",
+      "mysql2": "1.6.5",
+      "npm-run-all": "4.1.5",
+      "uuid": "3.3.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

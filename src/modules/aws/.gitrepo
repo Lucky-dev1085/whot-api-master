@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@bitbucket.org:onsysol/node-module-aws
+	branch = tmp_
+	commit = 0c012c3457a204c36cd83c85f18d8cf3963fc5ce
+	parent = 54c2917e190e037b84a2d556472851d64b1c7943
+	method = merge
+	cmdver = 0.4.0
